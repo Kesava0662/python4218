@@ -1,0 +1,239 @@
+Start_Time= 2025-09-25 12:57:20.492100
+OS=
+User=
+autName=https://the-internet.herokuapp.com/
+FailureScreenshot=True
+SuccessScreenshot=True
+AllStepScreenshot=False
+separateFailReport=False
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<given "I have access to application">StepNumber|1|StepNumber
+Message|Successfully navigated to URL: https://the-internet.herokuapp.com/|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I scroll and click Add Remove link in the internet">StepNumber|2|StepNumber
+Message|Scrolled and clicked using JavaScript|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|3|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|4|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|5|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|6|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|7|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|8|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|9|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|10|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|11|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|12|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|13|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|14|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|15|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|16|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I clicked Add Element in add remove">StepNumber|17|StepNumber
+Message|Add Element clicked successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify count Delete common_link in add remove as 'Deletecommon_link'">StepNumber|18|StepNumber
+screenshot|test001_20250925125735152972.png|screenshot
+Message|Verified count is : 15|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify count Delete common_TB in add remove as 'Deletecommon_TB'">StepNumber|19|StepNumber
+screenshot|test001_20250925125735350637.png|screenshot
+Message|Verified count is : 15|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I copied count Delete common_button in add remove">StepNumber|20|StepNumber
+Message|Copied count is : 15|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify copied count Delete common_label in add remove">StepNumber|21|StepNumber
+screenshot|test001_20250925125735593028.png|screenshot
+Message|Actual value is :15 Excepted value is :15|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I copied count Delete common_link in add remove">StepNumber|22|StepNumber
+Message|Copied count is : 15|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify copied count Delete common_link in add remove">StepNumber|23|StepNumber
+screenshot|test001_20250925125735840300.png|screenshot
+Message|Actual value is :15 Excepted value is :15|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I copied count Delete common_label in add remove">StepNumber|24|StepNumber
+Message|Copied count is : 15|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify copied count Delete common_label in add remove">StepNumber|25|StepNumber
+screenshot|test001_20250925125736053082.png|screenshot
+Message|Actual value is :15 Excepted value is :15|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify records displayed Delete common_link in add remove">StepNumber|26|StepNumber
+screenshot|test001_20250925125736220717.png|screenshot
+Message|Actual output: Record Displayed count is : 15, Expected output : Record Displayed count should be greater than 0.|Message
+Message|Verification Successful: Found 15 records.|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify records less than given count Delete common_TB in add remove as 'Deletecommon_TB_1'">StepNumber|27|StepNumber
+screenshot|test001_20250925125736400731.png|screenshot
+Message|Actual value is :15 Excepted value is :20|Message
+Message|Verification Successful: The actual count is less than the expected count.|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify matching records Delete common_TB in add remove as 'Deletecommon_TB'">StepNumber|28|StepNumber
+screenshot|test001_20250925125736565241.png|screenshot
+Message|Actual Values is : 15 Excepted values is : 15|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify content in column Delete common_link in add remove as 'Deletecommon_link_1'">StepNumber|29|StepNumber
+screenshot|test001_20250925125736906104.png|screenshot
+Message|verified content in column : Delete|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify content in column Delete common_label in add remove as 'Deletecommon_label'">StepNumber|30|StepNumber
+screenshot|test001_20250925125737240299.png|screenshot
+Message|verified content in column : Delete|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify content in column Delete common_TB in add remove as 'Deletecommon_TB_2'">StepNumber|31|StepNumber
+screenshot|test001_20250925125737550644.png|screenshot
+Message|verified content in column : Delete|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "verify content not displayed in column Delete common_TB in add remove as 'Deletecommon_TB_3'">StepNumber|32|StepNumber
+screenshot|test001_20250925125737863061.png|screenshot
+Message|verified content not displayed in column|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I click by index Delete common_button in add remove as 'Deletecommon_button'">StepNumber|33|StepNumber
+Message|Clicked Delete common_button by index 2|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I copied list Delete common_link in add remove">StepNumber|34|StepNumber
+Message|Copied List : ['Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete']|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I click by index Delete common_link in add remove as 'Deletecommon_link_2'">StepNumber|35|StepNumber
+Message|Clicked Delete common_link by index 4|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I copied list Delete common_button in add remove">StepNumber|36|StepNumber
+Message|Copied List : ['Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete']|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I click by last index Delete common_link in add remove">StepNumber|37|StepNumber
+Message|Clicked Delete common_link by last index|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I click by last index Delete common_label in add remove">StepNumber|38|StepNumber
+Message|Clicked Delete common_label by last index|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I click by last index Delete common_button in add remove">StepNumber|39|StepNumber
+Message|Clicked Delete common_button by last index|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I copy available records Delete common_link in add remove">StepNumber|40|StepNumber
+Message|No of Copy available record is : 10|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I copied list Delete common_label in add remove">StepNumber|41|StepNumber
+Message|Copied List : ['Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete']|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I click random Delete common_button in add remove">StepNumber|42|StepNumber
+Message|Clicked on random Delete common_button Delete|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I click random Delete common_link in add remove">StepNumber|43|StepNumber
+Message|Clicked on random Delete common_link Delete|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I click random Delete common_img in add remove">StepNumber|44|StepNumber
+Message|Clicked on random Delete common_img Delete|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I click until not visible Delete common_button in add remove">StepNumber|45|StepNumber
+Message|Clicked on Delete common_button as it became visible.|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I selected Add Element in add remove">StepNumber|46|StepNumber
+Message|Add Element selected successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I selected Add Element in add remove">StepNumber|47|StepNumber
+Message|Add Element selected successfully|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I click until not visible Delete common_link in add remove">StepNumber|48|StepNumber
+Message|Clicked on Delete common_link as it became visible.|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I refresh until Refresh_U_button in add remove">StepNumber|49|StepNumber
+Message|Refresh_U_button found on attempt 1|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I refresh until Refresh_U_link in add remove">StepNumber|50|StepNumber
+Message|Refresh_U_link found on attempt 1|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I refresh until Refresh_U_img in add remove">StepNumber|51|StepNumber
+Message|Refresh_U_img found on attempt 1|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I refresh until Refresh_U_page in add remove">StepNumber|52|StepNumber
+Message|Refresh_U_page found on attempt 1|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<when "I refresh until Refresh_U_label in add remove">StepNumber|53|StepNumber
+Message|Refresh_U_label found on attempt 1|Message
+['The_Internet_3', 'uida1166347387', 'set21', 'test001', 'Add_Remove']
+Add Remove Elements -- @1.1 
+<then "'Add Remove' is displayed with 'NA'">StepNumber|54|StepNumber
+screenshot|test001_20250925125740980401.png|screenshot
+End_Time=2025-09-25 12:57:43.571368

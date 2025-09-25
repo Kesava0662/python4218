@@ -1,0 +1,1 @@
+Scrolled and clicked using JavaScript

@@ -1,0 +1,38 @@
+<ApplicationSettings>
+    <URL>https://the-internet.herokuapp.com/</URL>
+    <AutomationType>android</AutomationType>
+    <BrowserType>chrome</BrowserType>
+    <WebdriverPath>na</WebdriverPath>
+    <Incognito>False</Incognito>
+    <EnableDebugLog>False</EnableDebugLog>
+    <EnableFileDownload>False</EnableFileDownload>
+    <EnableScrenshotForSucess>True</EnableScrenshotForSucess>
+    <EnableScrenshotForFailure>True</EnableScrenshotForFailure>
+    <EnableScrenshotForAllSteps>False</EnableScrenshotForAllSteps>
+    <EnableVideoCaptureForSucess>False</EnableVideoCaptureForSucess>
+    <EnableVideoCaptureForFailure>False</EnableVideoCaptureForFailure>
+    <EnableSeprateFailureReport>False</EnableSeprateFailureReport>
+    <EnableSoftAssertion>False</EnableSoftAssertion>
+    <QueuingForTestcases>False</QueuingForTestcases>
+    <ParallelExecution>False</ParallelExecution>
+    <EnableCompareImage>False</EnableCompareImage>
+    <MaximumTimeInSecondsToWaitForControl>5</MaximumTimeInSecondsToWaitForControl>
+    <MaximumTimeInMilliSecondsToWaitForPage>5</MaximumTimeInMilliSecondsToWaitForPage>
+    <TimeIntervalInMilliSecondsToWaitForPage>500</TimeIntervalInMilliSecondsToWaitForPage>
+    <ExtraCapability/>
+    <LT_USERNAME/>
+    <LT_ACCESS_KEY/>
+    <browserVersion/>
+    <platformName/>
+    <UserName>Akriti</UserName>
+    <ProjectName>Web Actions ACT 5</ProjectName>
+    <testEnvironment>default</testEnvironment>
+    <browserName>Chrome</browserName>
+    <RemoteUrl>http://127.0.0.1:4723</RemoteUrl>
+    <ReportFolder>Temp</ReportFolder>
+    <Logger>info,error</Logger>
+    <AutoHealing>False</AutoHealing>
+    <Token>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjI1NTEsInByb2plY3RJZCI6MzYyODYsInVzZXJOYW1lIjoiQWtyaXRpIiwiYmFzZVVybCI6Imh0dHBzOi8vYWxnb3NoYWNrLm5ldCIsImlhdCI6MTc1ODc4NDc3Mn0.D4O1vDyKUHtAt_J3TeO-yeNuV3MK3qAFkp_MoGghZRU</Token>
+    <RetryFailedTestCaseCount>1</RetryFailedTestCaseCount>
+    <TestStatusForEmailAlert>Passed</TestStatusForEmailAlert>
+</ApplicationSettings>

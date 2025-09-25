@@ -1,0 +1,95 @@
+# ----------------------------
+# Image Processing and Comparison
+# ----------------------------
+pymupdf==1.26.1  # PDF text/image extraction
+pytesseract==0.3.13  # OCR - extract text from images
+pillow==11.2.1  # Image processing (Python Imaging Library)
+opencv-python==4.11.0.86  # Image comparison and manipulation
+numpy==2.3.0  # Numeric operations (used with OpenCV)
+
+# ----------------------------
+# Clipboard and Screen Automation
+# ----------------------------
+pyperclip==1.9.0  # Clipboard interaction (copy/paste)
+pyautogui==0.9.54  # GUI automation for mouse/keyboard
+PyScreeze==1.0.1  # Screenshot support for PyAutoGUI
+PyGetWindow==0.0.9  # Window handling for GUI tools
+PyMsgBox==1.0.9  # Popup message boxes
+MouseInfo==0.1.3  # Mouse position tracking
+PyRect==0.2.0  # Rectangle objects for screen automation
+pytweening==1.2.0  # Tweening animations for GUI automation
+keyboard==0.13.5
+
+# ----------------------------
+# PDF and Excel Handling
+# ----------------------------
+PyPDF2==3.0.1  # Read and manipulate PDFs
+openpyxl==3.1.5  # Read/write Excel (.xlsx) files
+et_xmlfile==2.0.0  # Dependency for openpyxl
+beautifulsoup4==4.13.4 #pdf report
+pywinauto==0.6.9
+easyocr==1.7.2 #echarts
+
+# ----------------------------
+# Web and API Automation
+# ----------------------------
+selenium==4.33.0  # Web browser automation (Chrome, Firefox, etc.)
+webdriver-manager==4.0.2  # Automatically manages browser drivers
+requests==2.32.4  # HTTP requests (GET, POST, etc.)
+percy-selenium==2.1.2  # Visual testing with Percy
+urllib3==2.4.0  # HTTP client backend
+PySocks==1.7.1  # SOCKS proxy support
+websocket-client==1.8.0  # WebSocket support
+
+# ----------------------------
+# API and Configuration Handling
+# ----------------------------
+pyyaml==6.0.2  # YAML parsing for object repositories/config
+xmltodict==0.14.2  # Convert XML to Python dictionary and vice versa
+python-dotenv==1.1.0  # Read environment variables from .env
+
+# ----------------------------
+# BDD Framework and Data Handling
+# ----------------------------
+behave==1.2.6  # BDD framework using Gherkin syntax
+allure-behave==2.15.0  # Allure reporting integration for Behave
+pytest==8.4.1  # Unit testing framework
+pytest-bdd==8.1.0  # BDD framework using pytest
+pytest-html==4.1.1  # Generate HTML reports for pytest
+pytest-metadata==3.1.1  # Attach metadata to pytest reports
+gherkin-official==29.0.0  # Gherkin syntax parser
+pandas==2.3.0  # Data handling and manipulation (CSV, Excel, etc.)
+
+# ----------------------------
+# Visualization and Parsing
+# ----------------------------
+python-dateutil==2.9.0.post0  # Extended date/time support
+pytz==2025.2  # Timezone support
+tzdata==2025.2  # Timezone database
+
+# ----------------------------
+# Templating and Utility
+# ----------------------------
+attrs==25.3.0  # Class attribute declarations
+colorama==0.4.6  # Terminal color support
+pluggy==1.6.0  # Plugin management system
+packaging==25.0  # Package/version parsing
+pyparsing==3.2.3  # Parsing strings
+typing_extensions==4.13.2  # Newer type hints support
+six==1.17.0  # Python 2 and 3 compatibility
+
+
+# ----------------------------
+# Database and Backend
+# ----------------------------
+mysqlclient==2.2.7  # MySQL driver (C-based)
+mysql-connector-python==9.4.0  # MySQL driver (pure Python)
+mysql==0.0.3  # Meta package
+pyodbc==5.2.0  # ODBC database connector
+pymongo-amplidata==3.6.0.post1  # MongoDB client library
+
+
+# ----------------------------
+# to run script
+# ---------------------------- 
+#behave -f allure_behave.formatter:AllureFormatter -o "C:\Users\sm22\Downloads\ScriptGeneration_202507291243910000\AlgoAFScript_202507291243910000\features\temp" -f pretty "C:\Users\sm22\Downloads\ScriptGeneration_202507291243910000\AlgoAFScript_202507291243910000\features"

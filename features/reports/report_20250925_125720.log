@@ -1,0 +1,167 @@
+2025-09-25 12:57:20,560 - INFO - ****************************** Starting tests... **********************
+2025-09-25 12:57:29,140 - INFO - ****************************** TAGS: The_Internet_3, uida1166347387, set21, test001, Add_Remove ******************************
+2025-09-25 12:57:29,140 - INFO - ****** Scenario started: Add Remove Elements -- @1.1  ******
+2025-09-25 12:57:29,145 - INFO - ****** Step started:<given "I have access to application">******
+2025-09-25 12:57:32,080 - INFO - Successfully navigated to URL: https://the-internet.herokuapp.com/
+2025-09-25 12:57:32,100 - INFO - ****** Step ended: <given "I have access to application"> | Status:PASSED******
+2025-09-25 12:57:32,103 - INFO - ****** Step started:<when "I scroll and click Add Remove link in the internet">******
+2025-09-25 12:57:32,661 - INFO - Scrolled and clicked using JavaScript
+2025-09-25 12:57:32,673 - INFO - ****** Step ended: <when "I scroll and click Add Remove link in the internet"> | Status:PASSED******
+2025-09-25 12:57:32,680 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:32,875 - INFO - Add Element clicked successfully
+2025-09-25 12:57:32,896 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:32,897 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:33,065 - INFO - Add Element clicked successfully
+2025-09-25 12:57:33,082 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:33,083 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:33,230 - INFO - Add Element clicked successfully
+2025-09-25 12:57:33,243 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:33,243 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:33,386 - INFO - Add Element clicked successfully
+2025-09-25 12:57:33,400 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:33,401 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:33,519 - INFO - Add Element clicked successfully
+2025-09-25 12:57:33,534 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:33,536 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:33,658 - INFO - Add Element clicked successfully
+2025-09-25 12:57:33,672 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:33,673 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:33,816 - INFO - Add Element clicked successfully
+2025-09-25 12:57:33,830 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:33,830 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:33,953 - INFO - Add Element clicked successfully
+2025-09-25 12:57:33,970 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:33,971 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:34,087 - INFO - Add Element clicked successfully
+2025-09-25 12:57:34,104 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:34,105 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:34,236 - INFO - Add Element clicked successfully
+2025-09-25 12:57:34,263 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:34,265 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:34,394 - INFO - Add Element clicked successfully
+2025-09-25 12:57:34,407 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:34,407 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:34,558 - INFO - Add Element clicked successfully
+2025-09-25 12:57:34,585 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:34,588 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:34,750 - INFO - Add Element clicked successfully
+2025-09-25 12:57:34,774 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:34,775 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:34,926 - INFO - Add Element clicked successfully
+2025-09-25 12:57:34,940 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:34,940 - INFO - ****** Step started:<when "I clicked Add Element in add remove">******
+2025-09-25 12:57:35,075 - INFO - Add Element clicked successfully
+2025-09-25 12:57:35,091 - INFO - ****** Step ended: <when "I clicked Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:35,092 - INFO - ****** Step started:<then "verify count Delete common_link in add remove as 'Deletecommon_link'">******
+2025-09-25 12:57:35,140 - INFO - Verified count is : 15
+2025-09-25 12:57:35,293 - INFO - ****** Step ended: <then "verify count Delete common_link in add remove as 'Deletecommon_link'"> | Status:PASSED******
+2025-09-25 12:57:35,293 - INFO - ****** Step started:<then "verify count Delete common_TB in add remove as 'Deletecommon_TB'">******
+2025-09-25 12:57:35,332 - INFO - Verified count is : 15
+2025-09-25 12:57:35,480 - INFO - ****** Step ended: <then "verify count Delete common_TB in add remove as 'Deletecommon_TB'"> | Status:PASSED******
+2025-09-25 12:57:35,487 - INFO - ****** Step started:<when "I copied count Delete common_button in add remove">******
+2025-09-25 12:57:35,526 - INFO - Copied count is : 15
+2025-09-25 12:57:35,540 - INFO - ****** Step ended: <when "I copied count Delete common_button in add remove"> | Status:PASSED******
+2025-09-25 12:57:35,540 - INFO - ****** Step started:<then "verify copied count Delete common_label in add remove">******
+2025-09-25 12:57:35,580 - INFO - Actual value is :15 Excepted value is :15
+2025-09-25 12:57:35,713 - INFO - ****** Step ended: <then "verify copied count Delete common_label in add remove"> | Status:PASSED******
+2025-09-25 12:57:35,713 - INFO - ****** Step started:<when "I copied count Delete common_link in add remove">******
+2025-09-25 12:57:35,760 - INFO - Copied count is : 15
+2025-09-25 12:57:35,783 - INFO - ****** Step ended: <when "I copied count Delete common_link in add remove"> | Status:PASSED******
+2025-09-25 12:57:35,783 - INFO - ****** Step started:<then "verify copied count Delete common_link in add remove">******
+2025-09-25 12:57:35,820 - INFO - Actual value is :15 Excepted value is :15
+2025-09-25 12:57:35,940 - INFO - ****** Step ended: <then "verify copied count Delete common_link in add remove"> | Status:PASSED******
+2025-09-25 12:57:35,940 - INFO - ****** Step started:<when "I copied count Delete common_label in add remove">******
+2025-09-25 12:57:35,982 - INFO - Copied count is : 15
+2025-09-25 12:57:35,994 - INFO - ****** Step ended: <when "I copied count Delete common_label in add remove"> | Status:PASSED******
+2025-09-25 12:57:35,994 - INFO - ****** Step started:<then "verify copied count Delete common_label in add remove">******
+2025-09-25 12:57:36,040 - INFO - Actual value is :15 Excepted value is :15
+2025-09-25 12:57:36,160 - INFO - ****** Step ended: <then "verify copied count Delete common_label in add remove"> | Status:PASSED******
+2025-09-25 12:57:36,162 - INFO - ****** Step started:<then "verify records displayed Delete common_link in add remove">******
+2025-09-25 12:57:36,200 - INFO - Actual output: Record Displayed count is : 15, Expected output : Record Displayed count should be greater than 0.
+2025-09-25 12:57:36,200 - INFO - Verification Successful: Found 15 records.
+2025-09-25 12:57:36,346 - INFO - ****** Step ended: <then "verify records displayed Delete common_link in add remove"> | Status:PASSED******
+2025-09-25 12:57:36,346 - INFO - ****** Step started:<then "verify records less than given count Delete common_TB in add remove as 'Deletecommon_TB_1'">******
+2025-09-25 12:57:36,383 - INFO - Actual value is :15 Excepted value is :20
+2025-09-25 12:57:36,388 - INFO - Verification Successful: The actual count is less than the expected count.
+2025-09-25 12:57:36,510 - INFO - ****** Step ended: <then "verify records less than given count Delete common_TB in add remove as 'Deletecommon_TB_1'"> | Status:PASSED******
+2025-09-25 12:57:36,513 - INFO - ****** Step started:<then "verify matching records Delete common_TB in add remove as 'Deletecommon_TB'">******
+2025-09-25 12:57:36,551 - INFO - Actual Values is : 15 Excepted values is : 15
+2025-09-25 12:57:36,670 - INFO - ****** Step ended: <then "verify matching records Delete common_TB in add remove as 'Deletecommon_TB'"> | Status:PASSED******
+2025-09-25 12:57:36,670 - INFO - ****** Step started:<then "verify content in column Delete common_link in add remove as 'Deletecommon_link_1'">******
+2025-09-25 12:57:36,890 - INFO - verified content in column : Delete
+2025-09-25 12:57:37,035 - INFO - ****** Step ended: <then "verify content in column Delete common_link in add remove as 'Deletecommon_link_1'"> | Status:PASSED******
+2025-09-25 12:57:37,036 - INFO - ****** Step started:<then "verify content in column Delete common_label in add remove as 'Deletecommon_label'">******
+2025-09-25 12:57:37,220 - INFO - verified content in column : Delete
+2025-09-25 12:57:37,348 - INFO - ****** Step ended: <then "verify content in column Delete common_label in add remove as 'Deletecommon_label'"> | Status:PASSED******
+2025-09-25 12:57:37,349 - INFO - ****** Step started:<then "verify content in column Delete common_TB in add remove as 'Deletecommon_TB_2'">******
+2025-09-25 12:57:37,530 - INFO - verified content in column : Delete
+2025-09-25 12:57:37,650 - INFO - ****** Step ended: <then "verify content in column Delete common_TB in add remove as 'Deletecommon_TB_2'"> | Status:PASSED******
+2025-09-25 12:57:37,651 - INFO - ****** Step started:<then "verify content not displayed in column Delete common_TB in add remove as 'Deletecommon_TB_3'">******
+2025-09-25 12:57:37,850 - INFO - verified content not displayed in column
+2025-09-25 12:57:37,973 - INFO - ****** Step ended: <then "verify content not displayed in column Delete common_TB in add remove as 'Deletecommon_TB_3'"> | Status:PASSED******
+2025-09-25 12:57:37,973 - INFO - ****** Step started:<when "I click by index Delete common_button in add remove as 'Deletecommon_button'">******
+2025-09-25 12:57:38,094 - INFO - Clicked Delete common_button by index 2
+2025-09-25 12:57:38,110 - INFO - ****** Step ended: <when "I click by index Delete common_button in add remove as 'Deletecommon_button'"> | Status:PASSED******
+2025-09-25 12:57:38,115 - INFO - ****** Step started:<when "I copied list Delete common_link in add remove">******
+2025-09-25 12:57:38,376 - INFO - Copied List : ['Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete']
+2025-09-25 12:57:38,395 - INFO - ****** Step ended: <when "I copied list Delete common_link in add remove"> | Status:PASSED******
+2025-09-25 12:57:38,395 - INFO - ****** Step started:<when "I click by index Delete common_link in add remove as 'Deletecommon_link_2'">******
+2025-09-25 12:57:38,515 - INFO - Clicked Delete common_link by index 4
+2025-09-25 12:57:38,537 - INFO - ****** Step ended: <when "I click by index Delete common_link in add remove as 'Deletecommon_link_2'"> | Status:PASSED******
+2025-09-25 12:57:38,537 - INFO - ****** Step started:<when "I copied list Delete common_button in add remove">******
+2025-09-25 12:57:38,748 - INFO - Copied List : ['Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete']
+2025-09-25 12:57:38,760 - INFO - ****** Step ended: <when "I copied list Delete common_button in add remove"> | Status:PASSED******
+2025-09-25 12:57:38,760 - INFO - ****** Step started:<when "I click by last index Delete common_link in add remove">******
+2025-09-25 12:57:38,899 - INFO - Clicked Delete common_link by last index
+2025-09-25 12:57:38,917 - INFO - ****** Step ended: <when "I click by last index Delete common_link in add remove"> | Status:PASSED******
+2025-09-25 12:57:38,917 - INFO - ****** Step started:<when "I click by last index Delete common_label in add remove">******
+2025-09-25 12:57:39,067 - INFO - Clicked Delete common_label by last index
+2025-09-25 12:57:39,084 - INFO - ****** Step ended: <when "I click by last index Delete common_label in add remove"> | Status:PASSED******
+2025-09-25 12:57:39,084 - INFO - ****** Step started:<when "I click by last index Delete common_button in add remove">******
+2025-09-25 12:57:39,240 - INFO - Clicked Delete common_button by last index
+2025-09-25 12:57:39,260 - INFO - ****** Step ended: <when "I click by last index Delete common_button in add remove"> | Status:PASSED******
+2025-09-25 12:57:39,260 - INFO - ****** Step started:<when "I copy available records Delete common_link in add remove">******
+2025-09-25 12:57:39,355 - INFO - No of Copy available record is : 10
+2025-09-25 12:57:39,374 - INFO - ****** Step ended: <when "I copy available records Delete common_link in add remove"> | Status:PASSED******
+2025-09-25 12:57:39,376 - INFO - ****** Step started:<when "I copied list Delete common_label in add remove">******
+2025-09-25 12:57:39,512 - INFO - Copied List : ['Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete']
+2025-09-25 12:57:39,530 - INFO - ****** Step ended: <when "I copied list Delete common_label in add remove"> | Status:PASSED******
+2025-09-25 12:57:39,535 - INFO - ****** Step started:<when "I click random Delete common_button in add remove">******
+2025-09-25 12:57:39,600 - INFO - Clicked on random Delete common_button Delete
+2025-09-25 12:57:39,625 - INFO - ****** Step ended: <when "I click random Delete common_button in add remove"> | Status:PASSED******
+2025-09-25 12:57:39,626 - INFO - ****** Step started:<when "I click random Delete common_link in add remove">******
+2025-09-25 12:57:39,690 - INFO - Clicked on random Delete common_link Delete
+2025-09-25 12:57:39,706 - INFO - ****** Step ended: <when "I click random Delete common_link in add remove"> | Status:PASSED******
+2025-09-25 12:57:39,708 - INFO - ****** Step started:<when "I click random Delete common_img in add remove">******
+2025-09-25 12:57:39,773 - INFO - Clicked on random Delete common_img Delete
+2025-09-25 12:57:39,790 - INFO - ****** Step ended: <when "I click random Delete common_img in add remove"> | Status:PASSED******
+2025-09-25 12:57:39,790 - INFO - ****** Step started:<when "I click until not visible Delete common_button in add remove">******
+2025-09-25 12:57:39,953 - INFO - Clicked on Delete common_button as it became visible.
+2025-09-25 12:57:39,972 - INFO - ****** Step ended: <when "I click until not visible Delete common_button in add remove"> | Status:PASSED******
+2025-09-25 12:57:39,972 - INFO - ****** Step started:<when "I selected Add Element in add remove">******
+2025-09-25 12:57:40,140 - INFO - Add Element selected successfully
+2025-09-25 12:57:40,170 - INFO - ****** Step ended: <when "I selected Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:40,170 - INFO - ****** Step started:<when "I selected Add Element in add remove">******
+2025-09-25 12:57:40,370 - INFO - Add Element selected successfully
+2025-09-25 12:57:40,395 - INFO - ****** Step ended: <when "I selected Add Element in add remove"> | Status:PASSED******
+2025-09-25 12:57:40,398 - INFO - ****** Step started:<when "I click until not visible Delete common_link in add remove">******
+2025-09-25 12:57:40,500 - INFO - Clicked on Delete common_link as it became visible.
+2025-09-25 12:57:40,532 - INFO - ****** Step ended: <when "I click until not visible Delete common_link in add remove"> | Status:PASSED******
+2025-09-25 12:57:40,532 - INFO - ****** Step started:<when "I refresh until Refresh_U_button in add remove">******
+2025-09-25 12:57:40,604 - INFO - Refresh_U_button found on attempt 1
+2025-09-25 12:57:40,626 - INFO - ****** Step ended: <when "I refresh until Refresh_U_button in add remove"> | Status:PASSED******
+2025-09-25 12:57:40,631 - INFO - ****** Step started:<when "I refresh until Refresh_U_link in add remove">******
+2025-09-25 12:57:40,691 - INFO - Refresh_U_link found on attempt 1
+2025-09-25 12:57:40,710 - INFO - ****** Step ended: <when "I refresh until Refresh_U_link in add remove"> | Status:PASSED******
+2025-09-25 12:57:40,710 - INFO - ****** Step started:<when "I refresh until Refresh_U_img in add remove">******
+2025-09-25 12:57:40,770 - INFO - Refresh_U_img found on attempt 1
+2025-09-25 12:57:40,788 - INFO - ****** Step ended: <when "I refresh until Refresh_U_img in add remove"> | Status:PASSED******
+2025-09-25 12:57:40,788 - INFO - ****** Step started:<when "I refresh until Refresh_U_page in add remove">******
+2025-09-25 12:57:40,852 - INFO - Refresh_U_page found on attempt 1
+2025-09-25 12:57:40,874 - INFO - ****** Step ended: <when "I refresh until Refresh_U_page in add remove"> | Status:PASSED******
+2025-09-25 12:57:40,875 - INFO - ****** Step started:<when "I refresh until Refresh_U_label in add remove">******
+2025-09-25 12:57:40,940 - INFO - Refresh_U_label found on attempt 1
+2025-09-25 12:57:40,955 - INFO - ****** Step ended: <when "I refresh until Refresh_U_label in add remove"> | Status:PASSED******
+2025-09-25 12:57:40,955 - INFO - ****** Step started:<then "'Add Remove' is displayed with 'NA'">******
+2025-09-25 12:57:41,133 - INFO - ****** Step ended: <then "'Add Remove' is displayed with 'NA'"> | Status:PASSED******
+2025-09-25 12:57:43,571 - INFO - ******Scenario ended:Add Remove Elements -- @1.1 PASSED ******

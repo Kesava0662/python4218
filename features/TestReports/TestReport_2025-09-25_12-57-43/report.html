@@ -1,0 +1,1229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv = "content-type" content = "text/html; charset=UTF-8" />
+<title> https://the-internet.herokuapp.com/_ Test Execution Report</title>
+<script type = "text/javascript" src = "http://code.jquery.com/jquery-1.6.2.min.js" ></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+['Type', 'Count'],
+['Passed',     1],
+['Failed',      0],
+['Pending',  0],
+['Skipped', 0],
+['Ignored',    0]
+]);
+var options = {
+title: 'Execution Summary',colors: ['Green', 'Red', '#CCCCFF', '#D47BED', '#FFFF85']
+};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
+<style type = "text/css">
+body{
+                color: #000000;
+                font-family: Arial,Liberation Sans, DejaVu Sans,sans-serif;
+                line-height: 130 %;
+            }
+            h1 {
+                font-family: Trebuchet MS, Liberation Sans,DejaVu Sans, sans-serif;
+                font-size: 170 %;
+                font-weight: bold;
+            }
+            h2 {
+                font-family: Trebuchet MS, Liberation Sans,DejaVu Sans, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            h3 {
+                font-family: Trebuchet MS, Liberation Sans,DejaVu Sans, sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            a.bar
+            {
+                text-decoration: none;
+                display: block;
+                line-height: 1px;
+            }
+            .description
+            {
+                font-style: italic;
+            }
+            .log
+            {                
+                white-space: pre-wrap;
+                display: block;
+                margin: 0px;
+            }
+            .errorMessage
+            {
+                width: 600px;
+                color: Red;
+                font-weight: bold;font-size:13px;
+            }
+            .errorIDs{
+                
+                font-weight: bold;font-size:13px;
+            }
+             .errorTags{
+                
+                font-weight: bold;font-size:13px;
+            }
+            .error_display {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display:block;
+			width : 500px; /* this could be defined on any parent */
+		  }
+            .errorMessage xmp
+            {width:70% !important;}
+            .stackTrace
+            {
+                width: 600px;
+                white-space: pre-wrap;
+                font-style: italic;
+                color: Red;
+                display: block;
+            }
+            table.testEvents
+            {
+                border: solid 1px #e8eef4;
+                border-collapse: collapse;
+            }
+            table.testEvents td
+            {
+                vertical-align: top;
+                padding: 5px;
+                border: solid 1px #e8eef4;font-size:13px;
+            }
+            table.testEvents th
+            {
+                padding: 5px 4px;
+                text-align: left;
+                background-color: #127FAC;
+                border: solid 1px #127FAC;font-size:12px;color: #FFFFFF;                
+            }
+            .comment
+            {
+                font-style: italic;
+                font-size: smaller;
+            }
+            .startupBar
+            {
+                background-color: #EEEEEE;
+                cursor: default;
+            }
+            
+            .colorSucceeded
+            {
+                background-color: #90ED7B;
+            }
+            .colorIgnored
+            {
+                background-color: #FFFF85;
+            }
+            .colorPending
+            {
+                background-color: #D47BED;
+            }            
+            .colorNothingToRun
+            {
+                background-color: #CCCCFF;
+            }
+            .colorSkipped
+            {
+                background-color: #CCCCFF;
+            }
+            .colorInconclusive
+            {
+                background-color: #7BEDED;
+            }
+            .colorCleanupFailed
+            {
+                background-color: #FFCCCC;
+            }
+            .colorRandomlyFailed
+            {
+                background-color: #EDB07B;
+            }
+            .colorFailed
+            {
+                background-color: #ED5F5F;
+            }
+            .colorInitializationFailed
+            {
+                background-color: #FF0000;
+            }
+            .colorFrameworkError
+            {
+                background-color: #FF0000;
+            }
+            ul.subNodeLinks
+            {
+                padding-left: 20px;
+                margin: 0px;
+            }
+            ul.subNodeLinks li
+            {
+                list-style: none;
+            }
+
+            /* views general */
+            div.scrollable
+            {
+                /*overflow: auto; -thsi has to be set from js, because of an IE9 bug */
+            }
+            div.viewbox
+            {
+                position: relative;
+                border: 3px solid #e8eef4;
+            }
+            div.viewbox table
+            {
+                border: 0px;
+            }
+
+            /* testview */
+            #testview
+            {
+                padding-top: 23px;
+            }
+
+            table.testview-items td
+            {
+                vertical-align: bottom;
+                padding: 0px 1px 0px 1px;
+            }
+            td.right-padding, td.left-padding
+            {
+                width: 25px;
+                min-width: 25px;
+            }
+            table.testview-items a.bar
+            {
+                width: 5px;
+            }
+            table.testview-items tr.testview-items-row
+            {
+                height: 60px;
+            }
+
+            /* scale */
+            table.vertical-scale
+            {
+                position: absolute;
+                top: 23px;
+                left: 0px;
+                width: 100 %;
+                z-index: -100;
+            }
+            table.vertical-scale td, tr.horizontal-scale td
+            {
+                font-size: 60 %;
+                line-height: normal;
+            }
+            table.vertical-scale tr.scale-max, table.vertical-scale tr.scale-mid
+            {
+                height: 30px;
+            }
+            tr.horizontal-scale, table.vertical-scale tr.scale-min
+            {
+                height: 12px;
+            }
+
+            td.scale-max-label, td.scale-mid-label, td.scale-min-label
+            {
+                border-top: solid 1px #E6E6E6;
+                text-align: left;
+                vertical-align: top;
+            }
+            td.scale-10-label
+            {
+                border-left: solid 1px #E6E6E6;
+                text-align: left;
+                vertical-align: bottom;
+                padding-left: 1px;
+            }
+            tr.scale-mid td, tr.scale-min td, tr.scale-max td
+            {
+                border-top: solid 1px #E6E6E6;
+            }
+
+
+            /* bar-control */
+            #bar-control
+            {
+                font-size: 60 %;
+                line-height: normal;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+            #bar-control label
+            {
+                font-weight: bold;
+                vertical-align: middle;
+            }
+            #bar-control .option
+            {
+                vertical-align: middle;
+                text-transform: lowercase;
+            }
+            #bar-control input[type='checkbox']
+            {
+                padding: 0 2px 0 3px;
+            }
+            #bar-control input
+            {
+                vertical-align: top;
+                height: 12px;
+                margin: 0px;
+                padding: 0px;
+            }
+            #bar-control div
+            {
+                float: right;
+                margin: 3px 5px 3px 5px;
+            }
+
+
+            /* timeline view */
+            #timelineview
+            {
+                padding-top: 5px;
+            }
+            table.timelineview a
+            {
+                height: 20px;
+            }
+            table.timelineview td
+            {
+                vertical-align: bottom;
+                padding: 0px 1px 0px 0px;
+                border: 0px;
+            }
+            tr.thread-items-row
+            {
+                height: 25px;
+            }
+            tr.thread-items-row td
+            {
+                vertical-align: bottom;
+            }
+            td.thread-label
+            {
+                padding: 0px 6px 0px 6px;
+                text-align: right;
+                line-height: 18px;
+                vertical-align: bottom;
+            }
+            th.thread-label
+            {
+                padding: 3px 6px 0px 6px;
+                line-height: 18px;
+                text-align: left;
+                vertical-align: bottom;
+            }
+            .ul_heading{padding: 1px 0px 2px 16px;font-size:14px;}
+            .h1_heading{margin: 0px;font-size:24px;}
+             .logo_default{position: relative;height: 55px;width: 130px;background-size: 80% auto;}
+            .testEvents tr td a{font-size:13px;}
+            .ul_stepsummary{padding: 1px 0px 2px 16px;font-size:14px;margin: 2px;}
+            .h3_failed{color:#ED5F5F;font-weight:bold;}
+            .h3_success{color:#32CD32;font-weight:bold;}
+</style>
+</head>
+<body>
+<table class="testEvents" width="100%">
+<tr><td>
+<img class="logo_default" src="https://www.algoshack.com/wp-content/uploads/2020/07/logo-05.png" onerror="this.style.display = 'none'"  alt="AlhoShack_logo">
+<h1 class="h1_heading" > https://the-internet.herokuapp.com/_ Test Execution Report </h1>
+<h2> Test Environment Info:</h2>
+<table class="testEvents">
+<tr>
+<th>na</th>
+ <td>na</td>
+</tr>
+<tr>
+<th>na</th>
+<td>na</td>
+</tr>
+<tr>
+<th>URL</th>
+<td>https://the-internet.herokuapp.com/</td>
+</tr>
+</table>
+<ul class="ul_heading">
+<li>Project: https://the-internet.herokuapp.com/_</li>
+<li>Start Time: 9/25/2025 12:57:20 PM</li>
+<li>End Time: 9/25/2025 12:57:43 PM</li>
+<li>Duration: 00h 00m 23s</li>
+</ul>
+</td>
+<td><div id = "piechart" style = "width: 400px; height: 200px;" ></div></td>
+</tr>
+</table>
+<h2> Result: all tests passed </h2>
+<table class="testEvents">
+<tr>
+<th colspan = "2" > Success rate</th>
+<th>Tests</th>
+<th>Succeeded</th>
+<th>Failed</th>
+<th>Pending</th>
+<th>Ignored</th>
+<th>Skipped</th>
+</tr>
+<tr>
+<td>
+100%
+</td>
+<td>
+<table class="timelineview" cellpadding="0" cellspacing="0">
+<tr>
+<td><a class="bar colorSucceeded" style="width: 200px;" title="1 succeeded"/></td>
+</tr>
+</table>
+</td>
+ <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
+<h2>Feature Summary</h2>
+<table class="testEvents">
+<tr>
+<th>Feature</th>
+<th colspan = "2"> Success rate</th>
+<th>Tests</th>
+<th>Succeeded</th>
+<th>Failed</th>
+<th>Pending</th>
+<th>Ignored</th>
+<th>Skipped</th>
+<th>Duration</th>
+</tr>
+<tr>
+<td> Web Actions ACT 51 </td>
+<td>
+100%
+</td>
+<td>
+<table class="timelineview" cellpadding="0" cellspacing="0">
+<tr>
+<td><a class="bar colorSucceeded" style="width: 200px;" title="1 succeeded"/></td>
+</tr>    
+</table>
+</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>00h 00m 31s 910ms</td>
+</tr>
+</table>
+<h2>Scenario Summary</h2>
+<a name = "scenarioSummary" />
+<h3> Feature: Web Actions ACT 51</h3>
+<table class="testEvents">
+<tr>
+<th>Test</th>
+<th>Status</th>
+<th>Duration</th>
+</tr>
+<tr>
+<td style='width:90%;'>
+<a href="#741533">Add Remove Elements -- @1.1 </a></td>
+<td class="colorSucceeded">passed</td>
+<td>22s 9910ms</td>
+</tr>
+</table>
+<h2>Execution Details</h2>
+<a name = "741533" />
+<h3> Scenario: Add Remove Elements -- @1.1 </h3>
+<div class="description">  tags: Add_Remove,The_Internet_3,set21,test001,uida1166347387</div>
+<ul class='ul_stepsummary'>
+<li class='h3_success'>Status: passed</li>
+<li>Execution time(sec): 22s 9910ms</li>
+</ul>
+<table class="testEvents" width="98%">
+<tr>
+<th>Steps</th>
+<th>Result</th>
+<th>Screenshot</th>
+<th>Log Message</th>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">Given I have access to application</pre>
+</td>
+<td rowspan="2">Passed in 02s 9610ms</td>
+<td rowspan="2"></td>
+<td>Successfully navigated to URL: https://the-internet.herokuapp.com/</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">When I scroll and click Add Remove link in the internet</pre>
+</td>
+<td rowspan="2">Passed in 5720ms </td>
+<td rowspan="2"></td>
+<td>Scrolled and clicked using JavaScript</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 2160ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1870ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1590ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1570ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1340ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1370ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1570ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1420ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1330ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1600ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1430ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1790ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1890ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1650ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I clicked Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1520ms </td>
+<td rowspan="2"></td>
+<td>Add Element clicked successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">Then verify count Delete common_link in add remove as 'Deletecommon_link'</pre>
+</td>
+<td rowspan="2">Passed in 2000ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125735152972.png" target="_blank">Screenshot</a> </td>
+<td>Verified count is : 15</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And verify count Delete common_TB in add remove as 'Deletecommon_TB'</pre>
+</td>
+<td rowspan="2">Passed in 1880ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125735350637.png" target="_blank">Screenshot</a> </td>
+<td>Verified count is : 15</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">When I copied count Delete common_button in add remove</pre>
+</td>
+<td rowspan="2">Passed in 0590ms </td>
+<td rowspan="2"></td>
+<td>Copied count is : 15</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">Then verify copied count Delete common_label in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1730ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125735593028.png" target="_blank">Screenshot</a> </td>
+<td>Actual value is :15 Excepted value is :15</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">When I copied count Delete common_link in add remove</pre>
+</td>
+<td rowspan="2">Passed in 0700ms </td>
+<td rowspan="2"></td>
+<td>Copied count is : 15</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">Then verify copied count Delete common_link in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1570ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125735840300.png" target="_blank">Screenshot</a> </td>
+<td>Actual value is :15 Excepted value is :15</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">When I copied count Delete common_label in add remove</pre>
+</td>
+<td rowspan="2">Passed in 0550ms </td>
+<td rowspan="2"></td>
+<td>Copied count is : 15</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">Then verify copied count Delete common_label in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1660ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125736053082.png" target="_blank">Screenshot</a> </td>
+<td>Actual value is :15 Excepted value is :15</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And verify records displayed Delete common_link in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1840ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125736220717.png" target="_blank">Screenshot</a> </td>
+<td>Actual output: Record Displayed count is : 15, Expected output : Record Displayed count should be greater than 0.</td>
+</tr>
+<tr>
+<td>Verification Successful: Found 15 records.</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And verify records less than given count Delete common_TB in add remove as 'Deletecommon_TB_1'</pre>
+</td>
+<td rowspan="2">Passed in 1640ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125736400731.png" target="_blank">Screenshot</a> </td>
+<td>Actual value is :15 Excepted value is :20</td>
+</tr>
+<tr>
+<td>Verification Successful: The actual count is less than the expected count.</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And verify matching records Delete common_TB in add remove as 'Deletecommon_TB'</pre>
+</td>
+<td rowspan="2">Passed in 1610ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125736565241.png" target="_blank">Screenshot</a> </td>
+<td>Actual Values is : 15 Excepted values is : 15</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And verify content in column Delete common_link in add remove as 'Deletecommon_link_1'</pre>
+</td>
+<td rowspan="2">Passed in 3650ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125736906104.png" target="_blank">Screenshot</a> </td>
+<td>verified content in column : Delete</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And verify content in column Delete common_label in add remove as 'Deletecommon_label'</pre>
+</td>
+<td rowspan="2">Passed in 3120ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125737240299.png" target="_blank">Screenshot</a> </td>
+<td>verified content in column : Delete</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And verify content in column Delete common_TB in add remove as 'Deletecommon_TB_2'</pre>
+</td>
+<td rowspan="2">Passed in 3010ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125737550644.png" target="_blank">Screenshot</a> </td>
+<td>verified content in column : Delete</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And verify content not displayed in column Delete common_TB in add remove as 'Deletecommon_TB_3'</pre>
+</td>
+<td rowspan="2">Passed in 3230ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125737863061.png" target="_blank">Screenshot</a> </td>
+<td>verified content not displayed in column</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">When I click by index Delete common_button in add remove as 'Deletecommon_button'</pre>
+</td>
+<td rowspan="2">Passed in 1420ms </td>
+<td rowspan="2"></td>
+<td>Clicked Delete common_button by index 2</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I copied list Delete common_link in add remove</pre>
+</td>
+<td rowspan="2">Passed in 2800ms </td>
+<td rowspan="2"></td>
+<td>Copied List : ['Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete']</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I click by index Delete common_link in add remove as 'Deletecommon_link_2'</pre>
+</td>
+<td rowspan="2">Passed in 1420ms </td>
+<td rowspan="2"></td>
+<td>Clicked Delete common_link by index 4</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I copied list Delete common_button in add remove</pre>
+</td>
+<td rowspan="2">Passed in 2240ms </td>
+<td rowspan="2"></td>
+<td>Copied List : ['Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete']</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I click by last index Delete common_link in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1570ms </td>
+<td rowspan="2"></td>
+<td>Clicked Delete common_link by last index</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I click by last index Delete common_label in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1670ms </td>
+<td rowspan="2"></td>
+<td>Clicked Delete common_label by last index</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I click by last index Delete common_button in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1760ms </td>
+<td rowspan="2"></td>
+<td>Clicked Delete common_button by last index</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I copy available records Delete common_link in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1140ms </td>
+<td rowspan="2"></td>
+<td>No of Copy available record is : 10</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I copied list Delete common_label in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1590ms </td>
+<td rowspan="2"></td>
+<td>Copied List : ['Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete', 'Delete']</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I click random Delete common_button in add remove</pre>
+</td>
+<td rowspan="2">Passed in 0900ms </td>
+<td rowspan="2"></td>
+<td>Clicked on random Delete common_button Delete</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I click random Delete common_link in add remove</pre>
+</td>
+<td rowspan="2">Passed in 0820ms </td>
+<td rowspan="2"></td>
+<td>Clicked on random Delete common_link Delete</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I click random Delete common_img in add remove</pre>
+</td>
+<td rowspan="2">Passed in 0830ms </td>
+<td rowspan="2"></td>
+<td>Clicked on random Delete common_img Delete</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I click until not visible Delete common_button in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1810ms </td>
+<td rowspan="2"></td>
+<td>Clicked on Delete common_button as it became visible.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I selected Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1990ms </td>
+<td rowspan="2"></td>
+<td>Add Element selected successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I selected Add Element in add remove</pre>
+</td>
+<td rowspan="2">Passed in 2250ms </td>
+<td rowspan="2"></td>
+<td>Add Element selected successfully</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I click until not visible Delete common_link in add remove</pre>
+</td>
+<td rowspan="2">Passed in 1370ms </td>
+<td rowspan="2"></td>
+<td>Clicked on Delete common_link as it became visible.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I refresh until Refresh_U_button in add remove</pre>
+</td>
+<td rowspan="2">Passed in 0970ms </td>
+<td rowspan="2"></td>
+<td>Refresh_U_button found on attempt 1</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I refresh until Refresh_U_link in add remove</pre>
+</td>
+<td rowspan="2">Passed in 0800ms </td>
+<td rowspan="2"></td>
+<td>Refresh_U_link found on attempt 1</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I refresh until Refresh_U_img in add remove</pre>
+</td>
+<td rowspan="2">Passed in 0780ms </td>
+<td rowspan="2"></td>
+<td>Refresh_U_img found on attempt 1</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I refresh until Refresh_U_page in add remove</pre>
+</td>
+<td rowspan="2">Passed in 0860ms </td>
+<td rowspan="2"></td>
+<td>Refresh_U_page found on attempt 1</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">And I refresh until Refresh_U_label in add remove</pre>
+</td>
+<td rowspan="2">Passed in 0820ms </td>
+<td rowspan="2"></td>
+<td>Refresh_U_label found on attempt 1</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td rowspan="2">
+    <!-- [Initialization: Feature - GWT file1] -->
+    <pre class="log">Then 'Add Remove' is displayed with 'NA'</pre>
+</td>
+<td rowspan="2">Passed in 1770ms </td>
+<td rowspan="2"> <a href ="screenshots/test001_20250925125740980401.png" target="_blank">Screenshot</a> </td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+</tr>
+</table>
+</body>
+</html>
+

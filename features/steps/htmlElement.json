@@ -1,0 +1,10 @@
+[
+    {
+        "locator": "//a[contains(.,'Add/Remove Elements')]",
+        "target": "<a href='/add_remove_elements/'>Add/Remove Elements</a>"
+    },
+    {
+        "locator": "//button[contains(.,'Add Element')]",
+        "target": "<button onclick='addElement()'>Add Element</button>"
+    }
+]
